@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Line Coding - Simulator</title>
+<link rel="stylesheet" href="canvas.css">
+</head>
+
+<body onload="draw(), graph()">
+
+<!-- unipolar polar nrz line encode -->
+<canvas class="axes unipolar-nrz"></canvas>
+<canvas id="unipolar-nrz" class="unipolar-nrz"></canvas>
+
+<!-- unipolar polar nrz line encode -->
+<canvas class="axes unipolar-rz"></canvas>
+<canvas id="unipolar-rz" class="unipolar-rz"></canvas>
+
+<!-- polar nrz line encode -->
+<canvas class="axes polar-nrz"></canvas>
+<canvas id="polar-nrz" class="polar-nrz"></canvas>
+
+<!-- polar rz line encode -->
+<canvas class="axes polar-rz"></canvas>
+<canvas id="polar-rz" class="polar-rz"></canvas>
+
+<!-- polar ami line encode -->
+<canvas class="axes polar-ami"></canvas>
+<canvas id="polar-ami" class="polar-ami"></canvas>
+
+<!-- manchester line encode -->
+<canvas class="axes manchester"></canvas>
+<canvas id="manchester" class="manchester"></canvas>
+
+<!-- manchester dif line encode -->
+<canvas class="axes manchester-dif"></canvas>
+<canvas id="manchester-dif" class="manchester-dif"></canvas>
+
+<!-- B8ZS line encode -->
+<canvas class="axes B8ZS"></canvas>
+<canvas id="B8ZS" class="B8ZS"></canvas>
+
+<!-- HDB3 line encode -->
+<canvas class="axes HDB3"></canvas>
+<canvas id="HDB3" class="HDB3"></canvas>
+
+<div style="position: fixed; top: 20px; left: 850px;">
+    <label for="bitcode">Código binario:</label><br>
+    <input style="width: 250px;" type="text" value="11000000001100000110000100000000" id="bit-code"><br><br>
+    <button id="graph">Graficar</button>
+    <br>
+    <p>
+        <b>Para Manchester Diferencial:</b><br>
+        Si el código binario empieza en 0 la grafica comienza en V-<br>
+        Si el código binario empieza en 1 la grafica comienza en V+<br>
+        <br>
+        <b>Para HDB3:</b><br>
+        Si el código binario empieza en 0 se toma el # de 1s anteriores como impar.<br>
+        Si el código binario empieza en 1 se toma el # de 1s anteriores como par.<br>
+    </p>
+
+</div>
+
+</body>
+
+<script src="ejes.js"></script>
+
+<script>
+    
+</script>
+
+</html>
