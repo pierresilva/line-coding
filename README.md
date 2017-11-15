@@ -1,2 +1,2 @@
 # line-coding
-Simple line coding simularon in javascript
+Simple line coding simulator in javascript
